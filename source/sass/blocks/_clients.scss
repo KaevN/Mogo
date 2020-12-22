@@ -1,0 +1,136 @@
+.clients {
+    padding: 112px 0 125px 0;
+    position: relative;
+    background-image: url('img/webp/clients_bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include respond-to('tablet') {
+        padding-bottom: 100px;
+    }
+
+    @include respond-to('mobile') {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        min-height: 842px;
+        width: 100%;
+        background-color: rgba(255,255,255,.7);
+    }
+
+    &__title {
+        position: relative;
+        z-index: 3;
+    }
+
+    &__ul {
+        margin-top: 87px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        z-index: 3;
+
+        @include respond-to('mobile') {
+            margin-top: 50px;
+        }
+    }
+
+    &__underline { 
+        margin-top: 3px;
+    }
+
+    &-img {
+        margin-right: 26px;
+        width: 110px;
+        height: 110px;
+    }
+}
+
+.clients-item {
+    display: flex;
+    max-width: 514px;
+
+    @include respond-to('laptop') {
+        max-width: 480px;
+    }
+
+    @include respond-to('tablet') {
+        max-width: 380px;
+    }
+
+    @include respond-to('mobile') {
+        margin-top: 25px;
+        max-width: 85%;
+    }
+
+    @include respond-to('mobile-s') {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &:nth-child(3) {
+        margin-top: 66px;
+
+        @include respond-to('mobile') {
+            margin-top: 25px;
+        }
+    }
+
+    &:nth-child(4) {
+        margin-top: 66px;
+
+        @include respond-to('mobile') {
+            margin-top: 25px;
+        }
+    }
+
+    &__title {
+        margin: 7px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #333333;
+
+        @include respond-to('mobile-s') {
+            align-items: center;
+        }
+    }
+
+    &__title-descr {
+        margin: 5px 0 0 0;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.6;
+        text-transform: capitalize;
+    }
+
+    &__descr {
+        margin: 20px 0 0 0;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: left;
+        color: $darkgray;
+
+        @include respond-to('tablet') {
+            font-size: 13px;
+        }
+    }
+
+    &__title-underline {
+        margin-top: 13px;
+    }
+}

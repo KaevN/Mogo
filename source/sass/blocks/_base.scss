@@ -1,0 +1,95 @@
+.ul-props {
+    list-style-type: none;
+    @include reset;
+}
+
+.underline {
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: $pink;
+}
+
+.section-title {
+    @include reset;
+    display: flex;
+    flex-direction: column;
+    font-family: KaushanScript;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+.title-descr {
+    margin-top: 24px;
+    margin-bottom: 42px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @include respond-to('mobile-s') {
+        font-size: 24px;
+    }
+}
+
+.comment {
+    @include reset;
+    padding: 0 113px 0 321px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+    color: $gray;
+    background-repeat: no-repeat;
+    background-position: 105px 0;
+}
+
+.section-descr {
+    padding: 0 120px;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    color: $gray;
+
+    @include respond-to('tablet') {
+        padding: 0;
+    }
+}
+
+.links-props {
+    display: block;
+    width: 16px;
+    height: 17px;
+    background-repeat: no-repeat;
+}
+
+.footer-titles {
+    @include reset;
+    font-size: 14px;
+    line-height: 0.7;
+    text-transform: uppercase;
+
+    @include respond-to('tablet') {
+        font-size: 22px;
+    }
+}
+
+@keyframes tag {
+    10%{ background-position: 50% 30%; }
+    20%{ background-position: 50% 25%; }
+    30%{ background-position: 50% 10%; }
+    50%{ background-position: 50% 30%; }
+    55%{ background-position: 50% 20%; }
+    60%{ background-position: 50% 15%; }
+    70%{ background-position: 50% 30%; }
+    80%{ background-position: 50% 20%; }
+    100%{background-position: 50% 30%; }
+}
+
+.flex-container {
+    display: flex;
+}

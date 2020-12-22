@@ -1,0 +1,47 @@
+.map {
+    position: relative;
+    background-image: url('img/webp/map.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover {
+        & .map__title {
+            animation: tag 2s steps(10) infinite;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $white, $alpha: 0.7);
+        z-index: 1;
+    }
+
+    &__link {
+        padding: 56.5px 0;
+        display: block;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__title {
+        margin: 0;
+        padding-top: 44px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: $pink;
+        background-image: url('img/pin.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+    }
+
+    &__underline {
+        margin:  20px auto 0 auto;
+        display: block;
+    }
+}

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mogo</title>
+
+    <link rel="preload" href="build/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="build/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="build/fonts/KaushanScript-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="build/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="build/styles.min.css">
+
+    <script src="build/jquery.js" defer></script>
+    <script src="build/index.min.js" defer></script>
+</head>
+
+<body>
+   <header class="header js-header" data-section="header">
+       <div class="container">
+           <div class="flex-container">
+                <button class="burger-btn js-burger-btn" type="button" aria-label="menu" aria-expanded="false">
+                    <span class="burger-btn__line line-top"></span>
+                    <span class="burger-btn__line line-center"></span>
+                    <span class="burger-btn__line line-bottom"></span>
+                </button>
+
+                <div class="header__logo">MoGo</div>
+
+                <nav class="header__nav">
+                    <ul class="header__menu menu ul-props">
+                        <li class="menu__item" data-path="about">
+                            <a href="#" data-path="about">About</a>
+                        </li>
+
+                        <li class="menu__item" data-path="service">
+                            <a href="#" data-path="service">Service</a>
+                        </li>
+
+                        <li class="menu__item" data-path="work">
+                            <a href="#" data-path="work">Work</a>
+                        </li>
+
+                        <li class="menu__item" data-path="blog">
+                            <a href="#" data-path="blog">Blog</a> 
+                        </li>
+
+                        <li class="menu__item" data-path="contact">
+                            <a href="#" data-path="contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                    
+                <button class="header__cart" aria-label="cart"></button>
+
+                <input  class="header__search-area js-search-area" type="text" placeholder="search">
+
+                <button class="header__search js-search-btn" aria-label="search"></button>
+           </div> 
+       </div>
+   </header>
+
+   <main class="main">
+       <section class="first">
+           <div class="container">
+               <h1 class="first__title">Creative Template
+                    <small class="first__descr">Welcome to&nbsp;Mogo</small>
+
+                    <span class="first__underline underline"></span>
+               </h1>
+
+               <button class="first__btn btn">Learn more</button>
+
+               <ul class="first__menu first__menu_position">
+                   <li class="first__menu-item">
+                       <span class="menu-item-numbering"></span>
+                       <a href="#">Intro</a>
+                   </li>
+
+                   <li class="first__menu-item" data-path="work">
+                       <span class="menu-item-numbering"></span>
+                       <a href="#" data-path="work">Work</a>
+                   </li>
+
+                   <li class="first__menu-item" data-path="about">
+                       <span class="menu-item-numbering"></span>
+                       <a href="#" data-path="about">About</a>
+                   </li>
+
+                   <li class="first__menu-item" data-path="contact">
+                       <span class="menu-item-numbering"></span>
+                       <a href="#" data-path="contact">Contacts</a>
+                   </li>
+               </ul>
+           </div>
+       </section>
+
+       <section class="about-us" data-section="about">
+           <div class="container">
+                <h2 class="about-us__title section-title">What we do
+                    <small class="about-us__title-descr title-descr">Story about us</small>
+
+                    <span class="about-us__underline title-underline underline"></span>
+                </h2>
+
+                <p class="about-us__descr about-us__descr_position">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                
+                <ul class="about-us__ul about-us__ul_position ul-props">
+                    <li class="ul__item">
+                        <div class="ul__item-img-gradient">  
+                            <img src="build/img/webp/super_team.webp" class="ul__item-img" alt="pic">
+                        </div>
+                        <a href="#" class="ul__item-img-hover">Super team</a>
+                    </li>
+                    <li class="ul__item">
+                        <div class="ul__item-img-gradient">
+                            <img src="build/img/webp/super_team2.webp" class="ul__item-img" alt="pic">
+                        </div>
+                        <a href="#" class="ul__item-img-hover">Super team</a>
+                    </li>
+                    <li class="ul__item">
+                        <div class="ul__item-img-gradient">
+                            <img src="build/img/webp/super_team3.webp" class="ul__item-img" alt="pic">
+                        </div>
+                        <a href="#" class="ul__item-img-hover">Super team</a>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="section-counter">
+                <div class="container">
+                    <ul class="counter counter_position ul-props">
+                        <li class="counter__item">
+                            <h3 class="counter__numbers">
+                                42
+                                <small class="counter__item-caption">Web Design Projects</small>
+                            </h3>
+                        </li>
+                        <li class="counter__item">
+                            <h3 class="counter__numbers">
+                                123
+                                <small class="counter__item-caption">happy client</small>
+                            </h3>
+                        </li>
+                        <li class="counter__item">
+                            <h3 class="counter__numbers">
+                                15
+                                <small class="counter__item-caption">award winner</small>
+                            </h3>
+                        </li>
+                        <li class="counter__item">
+                            <h3 class="counter__numbers">
+                                99
+                                <small class="counter__item-caption">cup of coffee</small>
+                            </h3>
+                        </li>
+                        <li class="counter__item">
+                            <h3 class="counter__numbers">
+                                24
+                                <small class="counter__item-caption">members</small>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+       </section>
+
+       <section class="services">
+           <div class="container">
+                <h2 class="services__title section-title">We work with
+                    <small class="services__title-descr title-descr">Amazing Services</small>
+
+                    <span class="services__underline title-underline underline"></span>
+                </h2>
+
+                <ul class="services__ul ul-props">
+                    <li class="services__ul-item item-photography">
+                        <h3 class="services__item-title">Photography</h3>
+
+                        <p class="services__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </li>
+                    <li class="services__ul-item item-web">
+                        <h3 class="services__item-title">Web Design</h3>
+
+                        <p class="services__item-descr">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </li>
+                    <li class="services__ul-item item-creativity">
+                        <h3 class="services__item-title">Creativity</h3>
+
+                        <p class="services__item-descr">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </li>
+                    <li class="services__ul-item item-seo">
+                        <h3 class="services__item-title">seo</h3>
+
+                        <p class="services__item-descr">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </li>
+                    <li class="services__ul-item item-css">
+                        <h3 class="services__item-title">Css/Html</h3>
+
+                        <p class="services__item-descr">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
+                    </li>
+                    <li class="services__ul-item item-digital">
+                        <h3 class="services__item-title">digital</h3>
+
+                        <p class="services__item-descr">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </li>
+                </ul>
+           </div>
+       </section>
+
+       <section class="design">
+           <div class="container">
+                <h2 class="design__title section-title">For all devices
+                    <small class="design__title-descr title-descr">Unique design</small>
+
+                    <span class="design__underline title-underline underline"></span>
+                </h2>
+
+                <img class="design__tablet" src="build/img/webp/displaybg.webp" alt="lorem">
+
+                <img class="design__phone" src="build/img/webp/White.webp" alt="lorem">
+           </div>
+       </section>
+
+       <section class="service" data-section="service">
+           <div class="container">
+                <h2 class="service__title section-title">Service
+                    <small class="service__title-descr title-descr">what we do</small>
+
+                    <span class="service__underline title-underline underline"></span>
+                </h2>
+
+                <p class="service__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                
+                <section class="section-accordeon">
+                    <img src="build/img/webp/section__accordeon-img.webp" alt="lorem" class="section-accordeon__img">
+
+                    <ul class="accordeon ul-props">
+                        <li class="accordeon__item">
+                            <h3 class="accordeon__title accordeon__title_photo">Photography</h3>
+                            <div class="accordeon__content">
+                                <p class="accordeon__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </li>
+                        <li class="accordeon__item">
+                            <h3 class="accordeon__title accordeon__title_create">creativity</h3>
+                            <div class="accordeon__content">
+                                <p class="accordeon__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </li>
+                        <li class="accordeon__item">
+                            <h3 class="accordeon__title accordeon__title_web">web design</h3>
+                            <div class="accordeon__content">
+                                <p class="accordeon__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="service__comments">
+                <h2 class="visually-hidden">Comments</h2>
+                <div class="container">
+                    <article class="service__comments-comment">
+                        <h3 class="visually-hidden">Comment</h3>
+
+                        <p class="comments__content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+
+                        <span class="comments__underline underline"></span>
+                        <div class="comments__sign">Jon Doe</div>
+                    </article> 
+                </div>
+            </section>
+       </section>
+
+       <section class="team">
+           <div class="container">
+                <h2 class="team__title section-title">Who we are
+                    <small class="team__title-descr title-descr">Meet our team</small>
+
+                    <span class="team__underline title-underline underline"></span>
+                </h2>
+
+                <p class="team__descr section-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <ul class="team__ul ul-props">
+                    <li class="team__ul-item">
+                        <div class="team__ul-item-bg">
+                            <img src="build/img/webp/matthew.webp" alt="matthew" class="team__ul-item-img">
+                        </div>
+                        
+                        <ul class="team__ul-links ul-props">
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link fb-link" aria-label="matthew-facebook"></a>                                               
+                            </li>
+
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link twitter-link" aria-label="matthew-twitter"></a>   
+                            </li>
+
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link pinterest-link" aria-label="matthew-pinterest"></a>   
+                            </li>
+
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link insta-link" aria-label="matthew-insta"></a>   
+                            </li>
+                        </ul>
+
+                        <h3 class="team__ul-item-title">Matthew Dix
+                            <small class="team__ul-item-title-descr">Graphic Design</small>
+                        </h3>
+                    </li>
+
+                    <li class="team__ul-item">
+                        <div class="team__ul-item-bg">
+                            <img src="build/img/webp/christopher.webp" alt="christopher" class="team__ul-item-img">
+                        </div>
+                        
+                        <ul class="team__ul-links ul-props">
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link fb-link" aria-label="christopher-facebook"></a>                                               
+                            </li>
+
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link twitter-link" aria-label="christopher-twitter"></a>   
+                            </li>
+
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link pinterest-link" aria-label="christopher-pinterest"></a>   
+                            </li>
+
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link insta-link" aria-label="christopher-insta"></a>   
+                            </li>
+                        </ul>
+
+                        <h3 class="team__ul-item-title">Christopher Campbell
+                            <small class="team__ul-item-title-descr">Branding/UX design</small>
+                        </h3>
+                    </li>
+
+                    <li class="team__ul-item">
+                        <div class="team__ul-item-bg">
+                            <img src="build/img/webp/michael.webp" alt="michael" class="team__ul-item-img">
+                        </div>
+                        
+                        <ul class="team__ul-links ul-props">
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link fb-link" aria-label="michael-facebook"></a>                                               
+                            </li>
+
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link twitter-link" aria-label="michael-twitter"></a>   
+                            </li>
+
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link pinterest-link" aria-label="michael-pinterest"></a>   
+                            </li>
+
+                            <li class="team__ul-item-links">
+                                 <a href="#" class="team__ul-item-link insta-link" aria-label="michael-insta"></a>   
+                            </li>
+                        </ul>
+
+                        <h3 class="team__ul-item-title">Michael Fertig 
+                            <small class="team__ul-item-title-descr">Developer</small>
+                        </h3>
+                    </li>
+                </ul>
+           </div>
+
+           <div class="team__logos">
+               <div class="container">
+                    <img src="build/img/webp/logos.webp" class="logos__img" alt="lorem">
+               </div>
+           </div>
+       </section>
+
+       <section class="work" data-section="work">
+           <div class="container">
+                <h2 class="work__title section-title">What we do
+                    <small class="work__title-descr title-descr">some of our work</small>
+
+                    <span class="work__underline title-underline underline"></span>
+                </h2>
+
+                <p class="work__descr section-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+           </div>
+
+           <section class="work__gallery">
+                <ul class="gallery ul-props">
+                    <li class="work1 works">
+                        <img src="build/img/webp/work1.webp" alt="lorem" >
+
+                        <a href="#" class="work-link">
+                            <h4 class="work-link__title">creatively designed
+                                <small class="work-link__descr">Lorem ipsum dolor sit</small>
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="work2 works">
+                        <img src="build/img/webp/work2.webp" alt="lorem" >
+
+                        <a href="#" class="work-link">
+                            <h4 class="work-link__title">creatively designed
+                                <small class="work-link__descr">Lorem ipsum dolor sit</small>
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="work3 works">
+                        <img src="build/img/webp/work3.webp" alt="lorem" >
+
+                        <a href="#" class="work-link">
+                            <h4 class="work-link__title">creatively designed
+                                <small class="work-link__descr">Lorem ipsum dolor sit</small>
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="work4 works">
+                        <img src="build/img/webp/work4.webp" alt="lorem" >
+
+                        <a href="#" class="work-link">
+                            <h4 class="work-link__title">creatively designed
+                                <small class="work-link__descr">Lorem ipsum dolor sit</small>
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="work5 works">
+                        <img src="build/img/webp/work5.webp" alt="lorem" >
+
+                        <a href="#" class="work-link">
+                            <h4 class="work-link__title">creatively designed
+                                <small class="work-link__descr">Lorem ipsum dolor sit</small>
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="work6 works">
+                        <img src="build/img/webp/work6.webp" alt="lorem" >
+
+                        <a href="#" class="work-link">
+                            <h4 class="work-link__title">creatively designed
+                                <small class="work-link__descr">Lorem ipsum dolor sit</small>
+                            </h4>
+                        </a>
+                    </li>
+
+                    <li class="work7 works">
+                        <img src="build/img/webp/work7.webp" alt="lorem" >
+
+                        <a href="#" class="work-link">
+                            <h4 class="work-link__title">creatively designed
+                                <small class="work-link__descr">Lorem ipsum dolor sit</small>
+                            </h4>
+                        </a>
+                    </li>
+            </ul>
+           </section>
+
+           <div class="container">
+            <article class="comment work-comment">
+                <h3 class="visually-hidden">Comment</h3>
+
+                <p class="comments__content comment-content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+
+                <span class="work__underline underline"></span>
+                <div class="comments__sign">Joshua Earle</div>
+            </article> 
+           </div>
+       </section>
+
+       <section class="clients">
+           <div class="container">
+                <h2 class="clients__title section-title">Happy Clients
+                    <small class="clients__title-descr title-descr">What people say</small>
+
+                    <span class="clients__underline title-underline underline"></span>
+                </h2>
+
+                <ul class="clients__ul ul-props">
+                    <li class="clients-item">
+                        <img src="build/img/webp/matt.webp" alt="Matthew" class="clients-img">
+
+                        <div>
+                            <h3 class="clients-item__title">Matthew Dix
+                                <small class="clients-item__title-descr">Graphic Design</small>
+                                <span class="underline clients-item__title-underline"></span>
+                            </h3>
+
+                            <p class="clients-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        </div>
+                    </li>
+
+                    <li class="clients-item">
+                        <img src="build/img/webp/nick.webp" alt="Nick" class="clients-img">
+
+                        <div>
+                            <h3 class="clients-item__title">Nick Karvounis
+                                <small class="clients-item__title-descr">Graphic Design</small>
+                                <span class="underline clients-item__title-underline"></span>
+                            </h3>
+
+                            <p class="clients-item__descr">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                    </li>
+
+                    <li class="clients-item">
+                        <img src="build/img/webp/jaelynn.webp" alt="Jaelynn" class="clients-img">
+
+                        <div>
+                            <h3 class="clients-item__title">Jaelynn Castillo 
+                                <small class="clients-item__title-descr">Graphic Design</small>
+                                <span class="underline clients-item__title-underline"></span>
+                            </h3>
+
+                            <p class="clients-item__descr">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                    </li>
+
+                    <li class="clients-item">
+                        <img src="build/img/webp/petrucci.webp" alt="Mike" class="clients-img">
+
+                        <div>
+                            <h3 class="clients-item__title">Mike Petrucci
+                                <small class="clients-item__title-descr">Graphic Design</small>
+                                <span class="underline clients-item__title-underline"></span>
+                            </h3>
+
+                            <p class="clients-item__descr">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        </div>
+                    </li>
+                </ul>
+           </div>
+       </section>
+
+       <section class="blog" data-section="blog">
+           <div class="container">
+                <h2 class="blog__title section-title">Our stories
+                    <small class="blog__title-descr title-descr">Latest blog</small>
+
+                    <span class="blog__underline title-underline underline"></span>
+                </h2>
+
+                <ul class="blog__ul ul-props">
+                    <li class="blog__articles">
+                        <article class="blog__article">
+                            <div class="blog__article-date">15
+                                <small class="blog__article-date-month">Jan</small>
+                            </div>
+
+                            <a href="#">
+                                <img src="build/img/webp/blog1.webp" alt="lorem" class="blog__article-img">
+
+                                <h3 class="blog__article-title">Lorem ipsum dolor sit amet</h3>
+
+                                <p class="blog__article-descr">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </a>
+
+                            <div class="blog__article-bottom">
+                                <span class="blog__article-views">542</span>
+                                <a href="#" class="blog__article-comments">17</a>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="blog__articles">
+                        <article class="blog__article">
+                            <div class="blog__article-date">14
+                                <small class="blog__article-date-month">Jan</small>
+                            </div>
+                            <a href="#">
+                                <img src="build/img/webp/blog2.webp" alt="lorem" class="blog__article-img">
+
+                                <h3 class="blog__article-title">sed do eiusmod tempor</h3>
+    
+                                <p class="blog__article-descr">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </a>
+
+                            <div class="blog__article-bottom">
+                                <span class="blog__article-views">992</span>
+                                <a href="#" class="blog__article-comments">42</a>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="blog__articles">
+                        <article class="blog__article">
+                            <div class="blog__article-date">12
+                                <small class="blog__article-date-month">Jan</small>
+                            </div>
+                            <a href="#">
+                                <img src="build/img/webp/blog3.webp" alt="lorem" class="blog__article-img">
+
+                                <h3 class="blog__article-title">incididunt ut labore et dolore</h3>
+    
+                                <p class="blog__article-descr">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </a>
+
+                            <div class="blog__article-bottom">
+                                <span class="blog__article-views">1560</span>
+                                <a href="#" class="blog__article-comments">98</a>
+                            </div>
+
+                        </article>
+                    </li>
+                </ul>
+           </div>
+       </section>
+
+       <section class="map">
+            <h2 class="visually-hidden">Map</h2>
+
+            <a href="https://goo.gl/maps/HVA9evvrqe3YZ85i8" class="map__link" target="_blank" rel="noreferrer">
+                <h2 class="map__title">Open map
+                    <span class="underline map__underline"></span>
+                </h2>
+            </a>
+       </section>
+   </main>
+
+   <footer class="footer"> 
+       <div class="container">
+           <div class="flex-container">
+                <section class="footer__left">
+                    <h2 class="visually-hidden">Lorem ipsum</h2>
+
+                    <section class="footer-left__top">
+                        <h3 class="visually-hidden">MoGo</h3>
+
+                        <div class="footer-left__logo">MoGo</div>
+        
+                        <p class="footer-left__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        
+                        <span class="footer-left__followers">15k
+                            <small class="followers">followers</small>
+                        </span>
+                    </section>
+                    
+                    <section class="footer-left__bottom">
+                        <h2 class="visually-hidden">Follow Us</h2>
+
+                        <p class="footer-left-bottom__follow">Follow Us:</p>
+        
+                        <ul class="footer-left-bottom__ul ul-props">
+                            <li class="footer-left-bottom__ul-item">
+                                <a href="#" class="facebook links-props" aria-label="our facebook"></a>
+                            </li>
+        
+                            <li class="footer-left-bottom__ul-item">
+                                <a href="#" class="twitter links-props" aria-label="our twitter"></a>
+                            </li>
+        
+                            <li class="footer-left-bottom__ul-item">
+                                <a href="#" class="instagram links-props" aria-label="our instagram"></a>
+                            </li>
+        
+                            <li class="footer-left-bottom__ul-item">
+                                <a href="#" class="pinterest links-props" aria-label="our pinterest"></a>
+                            </li>
+        
+                            <li class="footer-left-bottom__ul-item">
+                                <a href="#" class="google links-props" aria-label="our g+"></a>
+                            </li>
+        
+                            <li class="footer-left-bottom__ul-item">
+                                <a href="#" class="youtube links-props" aria-label="our youtube"></a>
+                            </li>
+        
+                            <li class="footer-left-bottom__ul-item">
+                                <a href="#" class="dribbble links-props" aria-label="our dribbble"></a>
+                            </li>
+        
+                            <li class="footer-left-bottom__ul-item">
+                                <a href="#" class="tumblr links-props" aria-label="our tumblr"></a>
+                            </li>
+                        </ul>
+        
+                        <form class="footer-left__form">
+                            <input class="footer-left-bottom__input" type="text" placeholder="Your Email...">
+        
+                            <button class="footer-left-bottom__submit">Subscribe</button>
+                        </form>
+                    </section>
+                </section>
+
+                <section class="footer__center">
+                    <h3 class="footer-center__title footer-titles">blogs</h3>
+
+                    <ul class="footer-center__ul ul-props">
+                        <li class="footer-center__ul-item">
+                            <article class="footer-center__articles">
+                                <img src="build/img/webp/footer_blog1.webp" alt="lorem" class="footer-center__articles-img">
+                                <div>
+                                    <a href="#">
+                                        <h4 class="footer-center__articles-title">Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
+                                    </a>
+                                   
+                                    <time class="footer-center__articles-time" datetime="2016-01-09">Jan 9, 2016</time>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="footer-center__ul-item">
+                            <article class="footer-center__articles">
+                                <img src="build/img/webp/footer_blog2.webp" alt="lorem" class="footer-center__articles-img">
+
+                                <div>
+                                    <a href="#">
+                                        <h4 class="footer-center__articles-title">Consectetur adipiscing elit, sed do eiusmod tempor</h4>
+                                    </a>
+                                    
+                                    <time class="footer-center__articles-time" datetime="2016-01-09">Jan 9, 2016</time>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="footer-center__ul-item">
+                            <article class="footer-center__articles">
+                                <img src="build/img/webp/footer_blog3.webp" alt="lorem" class="footer-center__articles-img footer-center__articles-img-blog3">
+                                
+                                <div>
+                                    <a href="#">
+                                        <h4 class="footer-center__articles-title">sed do eiusmod tempor incididunt ut labore</h4>
+                                    </a>
+                                    
+                                    <time class="footer-center__articles-time" datetime="2016-01-09">Jan 9, 2016</time>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="footer__right" data-section="contact">
+                    <h3 class="footer-right__title footer-titles">instagram</h3>
+
+                    <ul class="footer-right__gallery ul-props">
+                        <li class="insta-links">
+                            <a href="#">
+                                <img src="build/img/webp/footer-insta1.webp" alt="lorem" class="footer-right__gallery-photo">
+                            </a>
+                        </li>
+
+                        <li class="insta-links">
+                            <a href="#">
+                                <img src="build/img/webp/footer-insta2.webp" alt="lorem" class="footer-right__gallery-photo">
+                            </a>
+                        </li>
+
+                        <li class="insta-links">
+                            <a href="#">
+                                <img src="build/img/webp/footer-insta3.webp" alt="lorem" class="footer-right__gallery-photo">
+                            </a>
+                        </li>
+
+                        <li class="insta-links">
+                            <a href="#">
+                                <img src="build/img/webp/footer-insta4.webp" alt="lorem" class="footer-right__gallery-photo">
+                            </a>
+                        </li>
+
+                        <li class="insta-links">
+                            <a href="#">
+                                <img src="build/img/webp/footer-insta5.webp" alt="lorem" class="footer-right__gallery-photo">
+                            </a>
+                        </li>
+
+                        <li class="insta-links">
+                            <a href="#">
+                                <img src="build/img/webp/footer-insta6.webp" alt="lorem" class="footer-right__gallery-photo">
+                            </a>
+                        </li>
+
+                        <li class="insta-links">
+                            <a href="#">
+                                <img src="build/img/webp/footer-insta7.webp" alt="lorem" class="footer-right__gallery-photo">
+                            </a>
+                        </li>
+
+                        <li class="insta-links">
+                            <a href="#">
+                                <img src="build/img/webp/footer-insta8.webp" alt="lorem" class="footer-right__gallery-photo">
+                            </a>
+                        </li>
+
+                        <li class="insta-links">
+                            <a href="#">
+                                <img src="build/img/webp/footer-insta9.webp" alt="lorem" class="footer-right__gallery-photo">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="" class="footer-right__more-photos">View more photos</a>
+                </section>
+           </div>
+
+           <p class="copyright">© 2016 MoGo free PSD template by 
+              <span class="copyright-by">Laaqiq</span>
+            </p>
+
+            <span class="to-top up_button" data-path="header"></span>
+       </div>
+   </footer>
+</body>
+
+</html>

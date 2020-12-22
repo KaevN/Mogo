@@ -1,0 +1,203 @@
+.service {
+    padding-top: 113px;
+
+    @include respond-to('mobile') {
+        padding-top: 50px
+    }
+    
+    &__descr {
+        margin-top: 43px;
+        margin-bottom: 0;
+        padding: 0 124px;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: center;
+        color: $gray;
+
+        @include respond-to('mobile') {
+            padding: 0;
+        }
+
+        @include respond-to('mobile-s') {
+            font-size: 13px;
+        }
+    }
+}
+
+.section-accordeon {
+    margin-top: 87px;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond-to('tablet') {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        @include respond-to('laptop') {
+            width: 55%;
+        }
+
+        @include respond-to('tablet') {
+            width: 56%;
+        }
+
+        @include respond-to('mobile') {
+            width: 100%;
+        }
+    }
+}
+
+.accordeon {
+    width: 600px;
+    max-width: 600px;
+    max-height: 360px;
+
+    @include respond-to('laptop') {
+        max-width: 430px;
+    }
+
+    @include respond-to('tablet') {
+        margin: 20px 0;
+        height: 360px;
+        max-width: 600px;
+    }
+
+    @include respond-to('mobile') {
+        max-width: 100%;
+    }
+
+    &__item {
+        margin-bottom: 7px;
+        border: solid 1px $gray;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        @include reset;
+        padding: 20px 40px 20px 60px;
+        position: relative;
+        font-family: Montserrat;
+        font-size: 14px;
+        text-align: left;
+        text-transform: uppercase;
+        border-bottom: solid 1px $gray;
+        background-repeat: no-repeat;
+        background-position: 2.5% 45%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 35%;
+            right: 3%;
+            width: 23px;
+            height: 20px;
+            background-image: url('img/ARROW_DOWN.png');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            transition: all ease .2s;
+        }
+
+        &_photo {
+            background-image: url('img/photography.png');
+        }
+
+        &_create {
+            background-image: url('img/EQUALIZER.png');
+        }
+
+        &_web {
+            background-image: url('img/webdesign.png');
+        }
+    }
+
+    &__content-text {
+        margin: 0;
+        padding: 15px 55px 18px 20px;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.6;
+        text-align: left;
+        color: $gray;
+
+        @include respond-to('laptop') {
+            max-height: 165px;
+            overflow-y: scroll;
+        }
+    }
+}
+
+.active > .accordeon__title {
+  
+    &:after {
+      transform: rotate(180deg);
+      transition: all ease .2s;
+    }
+}
+
+.service__comments {
+    margin-top: 120px;
+    padding-top: 65px;
+    padding-bottom: 69px;
+    background-color: $lightgray;
+
+    @include respond-to('tablet') {
+        margin-top: 0;
+    }
+
+    @include respond-to('mobile-s') {
+        padding: 25px 0;
+    }
+
+    &-comment {
+        padding: 0 113px 0 321px;
+        background-image: url('img/comment.png');
+        background-repeat: no-repeat;
+        background-position: 105px 0;
+
+        @include respond-to('mobile') {
+            padding: 0 20px;
+            background-image: none;
+        }
+    }
+}
+
+.comments__content {
+    @include reset;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+    color: $gray;
+
+    @include respond-to('tablet') {
+        font-size: 16px;
+    }
+
+    @include respond-to('mobile-s') {
+        font-size: 13px;
+    }
+}
+.comments__underline {
+    margin-top: 32px;
+}
+
+.comments__sign {
+    display: inline-block;
+    font-family: KaushanScript;
+    font-size: 24px;
+
+    @include respond-to('mobile-s') {
+        font-size: 18px;
+    }
+}

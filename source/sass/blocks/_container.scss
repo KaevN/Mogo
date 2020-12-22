@@ -1,0 +1,21 @@
+.container {
+    width: 1240px;
+    margin: $center;
+    padding: 0 20px;
+
+    @include respond-to('laptop') {
+        width: 1044px;
+        margin: $center; 
+        padding: 0 20px;
+    }
+
+    @include respond-to('tablet') {
+        width: 808px;
+        padding: 0 20px;
+    }
+
+    @include respond-to('mobile') {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

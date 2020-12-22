@@ -1,0 +1,224 @@
+.team {
+    padding-top: 104px;
+
+    @include respond-to('mobile') {
+        padding-top: 50px;
+    }
+
+    &__descr {
+        margin: 42px 0 0 0;
+    }
+
+    &__logos {
+        margin-top: 108px;
+        padding: 60px 0 58px 0;
+        background-color: $gray;
+
+        @include respond-to('tablet') {
+            margin-top: 50px;
+        }
+
+        @include respond-to('mobile-s') {
+            display: none;
+        }
+    }
+}
+
+.logos__img {
+    margin-left: 10px;
+}
+
+.team__ul {
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include respond-to('tablet') {
+        margin-top: 50px;
+    }
+
+    @include respond-to('mobile') {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-item {
+        position: relative;
+
+        @include respond-to('laptop') {
+            width: 32%;
+        }
+
+        @include respond-to('mobile') {
+            width: 50%;
+        }
+
+        @include respond-to('mobile-s') {
+            width: 100%;
+        }
+
+        &-bg {
+            background-color: $sky;
+            height: 85%;
+
+            @include respond-to('laptop') {
+                height: 83%;
+            }
+
+            @include respond-to('tablet') {
+                height: 78.5%;
+            }
+
+            @include respond-to('mobile') {
+                background-color: transparent;
+            }
+
+            @include respond-to('mobile-s') {
+                padding: 0 9.5%;
+            }
+        }
+
+        &-title {
+            margin: 21px 0 0 0;
+            font-family: Montserrat;
+            font-size: 14px;
+            text-align: center;
+            text-transform: uppercase;
+
+            &-descr {
+                display: block;
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: 300;
+                font-style: italic;
+                line-height: 2.4;
+                text-align: center;
+                text-transform: capitalize;
+                color: $gray;
+            }
+        }
+
+        &:hover {
+            
+            & .team__ul-item-img {
+                position: relative;
+                top: -10px;
+                left: -10px;
+
+                @include respond-to('mobile') {
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            & .team__ul-links {
+                display: flex;
+            }
+
+            & .team__ul-item-bg {
+                background-color: $sky;
+
+                @include respond-to('mobile') {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.team__ul-links {
+    position: absolute;
+    padding: 207px 78px;
+    display: none;
+    background-image: linear-gradient(to top,rgba(252,227,138,.7),rgba(243,129,129,.7)),linear-gradient(to bottom,rgba(149,225,211,.7),rgba(149,225,211,.7));
+    top: -10px;
+    left: -10px;
+
+    @include respond-to('laptop') {
+        padding: 171px 49px;
+    }
+
+    @include respond-to('tablet') {
+        padding: 132px 43px;
+    }
+
+    @include respond-to('mobile') {
+        padding: 0;
+        display: flex;
+        width: 100%;
+        height: 75%;
+        background-image: none;
+        justify-content: center;
+        align-items: flex-end;
+        left: 0;
+        top: 0;
+    }
+}
+
+.team__ul-item {
+
+    &-links {
+    width: 56px;
+    height: 56px;
+    background-color: $yellow;
+
+    @include respond-to('tablet') {
+        width: 40px;
+        height: 40px;
+    }
+
+        &:nth-child(2) {
+            border-left: 1px solid $pink;
+            border-right: 1px solid $pink;
+        }
+
+        &:nth-child(3) {
+            border-right: 1px solid $pink;
+        }
+
+        &:hover {
+            background-color: $pink;
+
+            & .fb-link {
+                background-image: url('img/facebook_team_active.png');
+            }
+            
+            & .twitter-link {
+                background-image: url('img/twitter_team_active.png');
+            }
+            
+            & .pinterest-link {
+                background-image: url('img/pinterest_team_active.png');
+            }
+            
+            & .insta-link {
+                background-image: url('img/instagram_team_active.png');
+            }            
+        }
+    }
+
+    &-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+
+.fb-link {
+    background-image: url('img/facebook_team_inactive.png');
+}
+
+.twitter-link {
+    background-image: url('img/twitter_team_inactive.png');
+}
+
+.pinterest-link {
+    background-image: url('img/pinterest_team_inactive.png');
+}
+
+.insta-link {
+    background-image: url('img/instagram_team_inactive.png');
+}

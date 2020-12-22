@@ -1,0 +1,38 @@
+@font-face {
+  font-weight: 400;
+  font-style: normal; 
+  font-family: "Montserrat"; 
+  font-display: swap; 
+  src: 
+    local("Montserrat regular"), url("../build/fonts/Montserrat-Regular.woff2") format("woff2"), url("../build/fonts/Montserrat-Regular.woff") format("woff"); 
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: 
+    local("Montserrat Bold"), url("../build/fonts/Montserrat-Bold.woff2") format("woff2"), url("../build/fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto";
+  font-display: swap;
+  src: 
+    local("Roboto"), url("../build/fonts/Roboto-Regular.woff2") format("woff2"), url("../build/fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-family: "KaushanScript";
+  font-display: swap;
+  src: 
+    local("Kaushan Script"), url("../build/fonts/KaushanScript-Regular.woff2") format("woff2"), url("../build/fonts/KaushanScript-Regular.woff") format("woff");
+}
+
+
+    

@@ -1,0 +1,57 @@
+.design {
+    padding-top: 113px;
+    position: relative;
+    width: 100%;
+    background-image: url('img/webp/Rectangle21.webp');
+
+    @include respond-to('mobile') {
+        margin-top: 20px;
+        padding-top: 50px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255,255,255,.7);
+        z-index: 0;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__tablet {
+        position: relative;
+        display: block;
+        margin-top: 8px;
+        margin-left: 24.1%;
+        z-index: 1;
+
+        @include respond-to('tablet') {
+            margin-left: 13.1%;
+        }
+
+        @include respond-to('mobile') {
+            margin: 8px auto 0 auto;
+        }
+    }
+
+    &__phone {
+        position: absolute;
+        right: 30.7%;
+        top: 54.6%;
+        z-index: 1;
+
+        @include respond-to('tablet') {
+            left: 57.7%;
+        }
+
+        @include respond-to('mobile') {
+            display: none;
+        }
+    }
+}
